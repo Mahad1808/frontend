@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
-        IMAGE_NAME = "your-dockerhub-username/your-image-name"
+        IMAGE_NAME = "mahaddevops/frontend-app"
     }
     stages {
         stage('Build Docker Image') {
